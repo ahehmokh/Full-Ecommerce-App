@@ -1,0 +1,35 @@
+.tablehead{
+}
+.clear{
+    button{
+        border: 1px solid black;
+    }
+}
+table{
+    justify-content: center;
+    width: 90%;
+    background-color: rgb(228, 231, 229);
+    font-size: 17px;
+    thead{
+        background-color: chocolate;
+    }
+ 
+    tbody{
+        img{
+            height: 100px;
+            padding: 10px;
+            mix-blend-mode: multiply;
+        }
+        button{
+           @media (max-width:1000px) {
+            padding: 10px;
+           }
+        }
+    }
+    @media (max-width:1000px) {
+        font-size: 16px;
+    }
+}
+.maindiv{
+    gap: 15px;
+}

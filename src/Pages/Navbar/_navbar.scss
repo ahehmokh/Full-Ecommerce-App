@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap');
+.logo{
+    font-family: "Playwrite CU", cursive;
+}
+.arrow{
+    bottom: 10px;
+    right: 10px;
+    background-color: black;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    transition: 0.5s;
+    color: white;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+.number{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    font-size: 13px;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,32 @@
+.section2{
+    height: 100vh;
+    .img{
+        background-image: url(../section3back.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        @media (max-width:1000px) {
+            height: 50vh;
+
+        }
+    }
+    .word{
+        height: 100vh;
+        @media (max-width:1000px) {
+            height: 55vh;
+        }
+        h1{
+            font-family: "Lobster", sans-serif;
+        }
+        button{
+            transition: 0.4s;
+            border: black solid 1px;
+            border-radius: 0;
+            &:hover{
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}

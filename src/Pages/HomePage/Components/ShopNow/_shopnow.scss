@@ -1,0 +1,22 @@
+.shopnow{
+    height: 100vh;
+    background-image: url(../section4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    .address{
+        margin: 0 200px;
+        @media (max-width:1000px) {
+          
+            margin: auto;
+        }
+        button{
+            background-color: transparent;
+            transition: 0.4s;
+            &:hover{
+                background-color: white;
+            }
+        }
+    }
+}

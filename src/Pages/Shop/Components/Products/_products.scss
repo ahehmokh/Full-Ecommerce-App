@@ -1,0 +1,26 @@
+.products{
+    .cards{
+        margin-top: 50px;
+        .card{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            height: 450px;
+            margin-top: 20px;
+            background-color:grey;
+            transition: 0.5s;
+            .title{
+                height: 50px;
+                overflow: hidden;
+            }
+        img{
+            height: 270px;
+            mix-blend-mode: multiply;
+        }
+        &:hover{
+            background-color: white;
+        }
+        }
+    }
+}

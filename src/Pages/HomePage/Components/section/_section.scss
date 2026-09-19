@@ -1,0 +1,22 @@
+.section{
+    height: 100vh;
+    background-image: url(../sectionbackground.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    div{
+        display: flex;
+        flex-direction: column;
+        gap: 80px;
+        button{
+            background-color: transparent;
+            border: 1px solid black;
+            border-radius: 0;
+            transition: 0.4s;
+            &:hover{
+                background-color: white;
+            }
+        }
+    }
+}
