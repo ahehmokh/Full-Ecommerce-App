@@ -2,14 +2,15 @@ import Footer from "../HomePage/Components/footer/Footer";
 import ShopHero from "./Components/hero/hero";
 import Products from "./Components/Products/Products";
 
+
 const Shop = () => {
-    return ( 
+    return (
         <>
-        <ShopHero/>
-        <Products/>
-        <Footer/>
+            <ShopHero />
+            <Products />
+            <Footer />
         </>
-     );
-}
- 
+    );
+};
+
 export default Shop;

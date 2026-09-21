@@ -1,26 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap');
-.hero{
-    height: 100vh;
-    background-image: url(../background.jpg);
-    background-position:100%;
+
+.hero {
+    min-height: 100vh;
+    padding: 40px 20px;
+
+    background-image: url("../background.jpg");
+    background-position: center;
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-attachment: fixed;
+
     text-align: center;
     gap: 20px;
-    h1{
+
+    h1 {
         font-family: "Lobster", sans-serif;
+        font-size: 60px;
+        line-height: 1.2;
     }
-    button{
+
+    p {
+        max-width: 800px;
+        line-height: 1.7;
+    }
+
+    button {
         transition: 0.4s;
         border: 1px solid white;
         padding: 10px 40px;
         background-color: transparent;
         border-radius: 0;
+        color: white;
+        cursor: pointer;
 
-        &:hover{
+        &:hover {
             color: black;
-           border: 1px solid white;
             background-color: white;
         }
     }

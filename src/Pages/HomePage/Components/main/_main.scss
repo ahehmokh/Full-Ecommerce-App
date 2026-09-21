@@ -1,34 +1,167 @@
-.main{
-    margin: 80px 0;
+.main {
+    padding: 80px 5%;
+    background-color: #fff;
+    color: #222;
+}
+
+.main > h1 {
+    text-align: center;
+    font-family: "Lobster", sans-serif;
+    font-size: 45px;
+    margin-bottom: 50px;
+    color: #222;
+}
+
+/* Products Container */
+
+.main .container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+/* Card */
+
+.card {
+    position: relative;
+    overflow: hidden;
+
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+
+    transition: 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* Image */
+
+.cardimg {
+    width: 100%;
+    height: 360px;
+    overflow: hidden;
+}
+
+.cardimg img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: 0.5s ease;
+}
+
+.card:hover .cardimg img {
+    transform: scale(1.06);
+}
+
+/* Card Body */
+
+.cardbody {
+    padding: 20px 20px 10px;
+}
+
+.cardbody p {
+    margin: 0 0 8px;
+
+    color: #888;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cardbody h5 {
+    margin: 0 0 12px;
+
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.cardbody h4 {
+    margin: 0;
+
+    font-size: 19px;
+    font-weight: 700;
+}
+
+/* Size Buttons */
+
+.btns {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-  .container{
+
+    gap: 7px;
+
+    padding: 10px 20px 20px;
+}
+
+.btns button {
+    width: 38px;
+    height: 38px;
+
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    .card{
-        background-color: white;
-        margin: 10px 30px;
-        text-align: center;
-        width: 250px;
-        .cardimg{
-            img{
-                width: 250px;;
-            }
-        }
+    align-items: center;
+
+    padding: 0;
+
+    border: 1px solid #ccc;
+    background-color: white;
+    color: #222;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.btns button:hover {
+    background-color: #222;
+    color: white;
+    border-color: #222;
+}
+
+
+/* Tablet */
+
+@media (max-width: 992px) {
+
+    .main .container {
+        grid-template-columns: repeat(2, 1fr);
     }
-    .btns{
-        button{
-            background-color: wheat;
-            &:hover{
-                border: 1px black solid;
-                }
-        }
-        
+
+}
+
+
+/* Mobile */
+
+@media (max-width: 576px) {
+
+    .main {
+        padding: 60px 20px;
     }
-  }
-    
+
+    .main > h1 {
+        font-size: 38px;
+        margin-bottom: 35px;
+    }
+
+    .main .container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .cardimg {
+        height: 420px;
+    }
+
 }
